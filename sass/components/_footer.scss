@@ -1,12 +1,14 @@
+.logo,
+.link {
+  text-decoration: none;
+}
 
 .logo {
-  text-decoration: none
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
 .link {
-  text-decoration: none
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -30,17 +32,23 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  &:hover,
-  &:focus {
-  color: var(--accent-text-color);
-}
 }
 
-.contactsfot.mail,
+.contactsfot.mail {
+  display: block;
+  margin-top: 9px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contactsfot.tel {
   display: block;
   margin-top: 9px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contactsfot:hover,
+.contactsfot:focus {
+  color: var(--accent-text-color);
 }
 
 .color-footer {
@@ -77,9 +85,10 @@
   width: 44px;
   height: 44px;
   margin-right: 10px;
-  &:last-child {
-  margin-right: 0;
 }
+
+.master-soc-item:last-child {
+  margin-right: 0;
 }
 
 .master-soc-link-footer {
@@ -91,10 +100,11 @@
   align-items: center;
   justify-content: center;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-  background-color: #2196f3;
 }
+
+.master-soc-link-footer:hover,
+.master-soc-link-footer:focus {
+  background-color: #2196f3;
 }
 
 .master-soc-link-footer:hover .masters-soc-icon,

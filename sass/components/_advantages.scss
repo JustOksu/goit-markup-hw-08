@@ -1,8 +1,8 @@
-.advantages.list {
+.site-nav.list {
   display: flex;
 }
 
-.advantages__direction + .advantages__direction {
+.about-work + .about-work {
   margin-left: 30px;
 }
 
@@ -25,7 +25,7 @@
   margin-bottom: 30px;
 }
 
-.advantages__list {
+.advantages-list {
   display: flex;
   justify-content: center;
   width: 270px;
@@ -35,20 +35,32 @@
   margin-bottom: 30px;
 }
 
-.advantages__link {
+.advantages-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.advanages__title {
-  color: var(--primary-text-color);
+.wwd-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  text-align: left;
+
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.list-wwd {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
 }

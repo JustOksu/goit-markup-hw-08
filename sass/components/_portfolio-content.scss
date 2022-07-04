@@ -25,9 +25,12 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.site-nav.list-images {
+.site-nav.list-images.flex-start-aligned {
   max-width: 370px;
   height: 404px;
+}
+
+.site-nav.list-images {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -36,12 +39,13 @@
 .card-portfolio {
   text-decoration: none;
   display: block;
-  &:hover,
-  &:focus {
-    background: #ffffff;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+}
+
+.card-portfolio:hover,
+.card-portfolio:focus {
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-top-wrap {

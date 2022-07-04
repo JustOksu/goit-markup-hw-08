@@ -15,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>WebStudio</title>
   </head>
@@ -23,7 +23,7 @@
   <body class="page">
     <!-- Шапка сайта -->
 
-    <header class="hat">
+    <header class="header">
       <div class="container hat">
         <nav class="nav-index">
           <a class="logo" lang="en" href="./index.html">
@@ -63,10 +63,10 @@
     <!-- Герой -->
 
     <main>
-      <section class="hero">
+      <section class="section section-hero">
         <div class="container">
-          <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button type="button" class="hero__btn" data-modal-open>
+          <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+          <button type="button" class="btn-index" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -76,58 +76,58 @@
 
       <section class="section">
         <div class="container">
-          <ul class="advantages list">
-            <li class="advantages__direction">
-              <div class="advantages__list">
-                <a href="" class="advantages__link">
-                  <svg class="advanages__icon" width="70" height="70">
+          <ul class="site-nav list">
+            <li class="about-work">
+              <div class="advantages-list">
+                <a href="" class="advantages-list-link">
+                  <svg class="advanages-list-icon" width="70" height="70">
                     <use href="./img/icon/icons.svg#icon-antenna"></use>
                   </svg>
                 </a>
               </div>
-              <h3 class="advanages__title">Внимание к деталям</h3>
+              <h3 class="section-title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
             <li class="about-work">
-              <div class="advantages__list">
-                <a href="" class="advantages__link">
-                  <svg class="advanages__icon" width="70" height="70">
+              <div class="advantages-list">
+                <a href="" class="advantages-list-link">
+                  <svg class="advanages-list-icon" width="70" height="70">
                     <use href="./img/icon/icons.svg#icon-clock"></use>
                   </svg>
                 </a>
               </div>
-              <h3 class="advanages__title">Пунктуальность</h3>
+              <h3 class="section-title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
             <li class="about-work">
-              <div class="advantages__list">
-                <a href="" class="advantages__link">
-                  <svg class="advanages__icon" width="70" height="70">
+              <div class="advantages-list">
+                <a href="" class="advantages-list-link">
+                  <svg class="advanages-list-icon" width="70" height="70">
                     <use href="./img/icon/icons.svg#icon-diagram"></use>
                   </svg>
                 </a>
               </div>
-              <h3 class="advanages__title">Планирование</h3>
+              <h3 class="section-title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
             <li class="about-work">
-              <div class="advantages__list">
-                <a href="" class="advantages__link">
-                  <svg class="advanages__icon" width="70" height="70">
+              <div class="advantages-list">
+                <a href="" class="advantages-list-link">
+                  <svg class="advanages-list-icon" width="70" height="70">
                     <use href="./img/icon/icons.svg#icon-astronaut"></use>
                   </svg>
                 </a>
               </div>
-              <h3 class="advanages__title">Современные технологии</h3>
+              <h3 class="section-title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -501,7 +501,7 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <div class="">
+          <div class="modal-field">
             <label for="user-name" class="modal-label">Имя</label>
             <div class="input-wrap">
               <input
@@ -520,7 +520,7 @@
               </svg>
             </div>
           </div>
-          <div class="">
+          <div class="modal-field">
             <label for="user-tel" class="modal-label">Телефон</label>
             <div class="input-wrap">
               <input
@@ -539,7 +539,7 @@
               </svg>
             </div>
           </div>
-          <div class="">
+          <div class="modal-field">
             <label for="user-email" class="modal-label">Почта</label>
             <div class="input-wrap">
               <input

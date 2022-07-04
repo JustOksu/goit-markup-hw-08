@@ -1,4 +1,4 @@
-.hero {
+.section.section-hero {
   padding-bottom: 200px;
   padding-top: 200px;
   background-color: var(--head-background-color);
@@ -14,7 +14,19 @@
   margin: 0 auto;
 }
 
-.hero__title {
+.section-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.hero-title {
   color: var(--secondary-backgroud-color);
   font-weight: 900;
   font-size: 44px;
@@ -27,7 +39,7 @@
   margin-bottom: 30px;
 }
 
-.hero__btn {
+.btn-index {
   display: block;
   font-weight: 700;
   font-size: 16px;
