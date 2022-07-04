@@ -1,16 +1,16 @@
-@import "./general";
+@import "./components/general";
 
-@import "./header";
-@import "./hero";
-@import "./modal";
-@import "./advantages";
-@import "./activities";
-@import "./team";
-@import "./clients";
-@import "./footer";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/advantages";
+@import "./components/activities";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
 
-@import "./portfolio-nav";
-@import "./portfolio-content";
+@import "./components/portfolio-nav";
+@import "./components/portfolio-content";
 
 @import "./utils/hidden";
 @import "./utils/variables";
