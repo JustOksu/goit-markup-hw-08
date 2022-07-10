@@ -1,25 +1,51 @@
 .site-nav.list {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  list-style: none;
+  justify-content: center;
 }
 
-.about-work + .about-work {
-  margin-left: 30px;
+.about-work {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.section-title {
+  text-align: center;
 }
 
 .text {
-  max-width: 270px;
+  // max-width: 270px;
   height: 75px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .advantages {
   list-style: none;
   display: flex;
-  gap: 30px;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
@@ -28,7 +54,7 @@
 .advantages-list {
   display: flex;
   justify-content: center;
-  width: 270px;
+  align-items: center;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -46,7 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 370px;
+  // width: 370px;
   height: 70px;
   font-weight: 700;
   font-size: 14px;

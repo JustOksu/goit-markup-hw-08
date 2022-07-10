@@ -6,12 +6,47 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/index/hero-bg.jpg);
+    url(../img/index/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
+  @include retina {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/index/hero-bg-mobile-2x.jpg);
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/index/hero-bg-tablet.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/index/hero-bg-tablet-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/index/hero-bg.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/index/hero-bg-2x.jpg);
+    }
+  }
 }
 
 .section-title {
@@ -28,13 +63,14 @@
 
 .hero-title {
   color: var(--secondary-backgroud-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(26px, 900, null, 0.06em);
+  // font-weight: 900;
+  // font-size: 26px;
+  // line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.06em;
+  // letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
 }

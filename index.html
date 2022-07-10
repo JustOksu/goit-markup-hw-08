@@ -64,7 +64,7 @@
 
     <main>
       <section class="section section-hero">
-        <div class="container">
+        <div class="hero container">
           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button type="button" class="btn-index" data-modal-open>
             Заказать услугу
@@ -139,7 +139,7 @@
 
       <!-- Занятия -->
 
-      <section class="section section-wwd">
+      <!-- <section class="section section-wwd">
         <div class="container wwd-container">
           <h2 class="subject">Чем мы занимаемся</h2>
           <ul class="site-nav work">
@@ -175,7 +175,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Команда -->
 
@@ -184,13 +184,33 @@
           <h2 class="htwotitle team-img">Наша команда</h2>
           <ul class="command-list">
             <li class="list-team">
-              <img
-                class="imageteam"
-                src="./img/team/team.jpg"
-                width="270"
-                height="260"
-                alt="Команда"
-              />
+              <picture>
+                <source
+                  srcset="
+                ./img/team/team.jpg x1,
+                ./img/team/team-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                ./img/team/team-tablet.jpg x1,
+                ./img/team/team-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                ./img/team/team-mobile.jpg x1,
+                ./img/team/team-mobile-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="imageteam"
+                  src="./img/team/team-mobile.jpg"
+                  width="450"
+                  alt="Команда"
+                />
+              </picture>
+
               <h3 class="ourteam">Игорь Демьяненко</h3>
               <p lang="en" class="textteam">Product Designer</p>
               <ul class="master-soc-list list">
@@ -225,13 +245,32 @@
               </ul>
             </li>
             <li class="list-team">
-              <img
-                class="imageteam"
-                src="./img/team/team1.jpg"
-                width="270"
-                height="260"
-                alt="Команда 1"
-              />
+              <picture>
+                <source
+                  srcset="
+                ./img/team/team1.jpg x1,
+                ./img/team/team1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                ./img/team/team1-tablet.jpg x1,
+                ./img/team/team1-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                ./img/team/team1-mobile.jpg x1,
+                ./img/team/team1-mobile-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="imageteam"
+                  src="./img/team/team1-mobile.jpg"
+                  width="450"
+                  alt="Команда"
+                />
+              </picture>
               <h3 class="ourteam">Ольга Репина</h3>
               <p lang="en" class="textteam">Frontend Developer</p>
               <ul class="master-soc-list list">
@@ -266,13 +305,32 @@
               </ul>
             </li>
             <li class="list-team">
-              <img
-                class="imageteam"
-                src="./img/team/team2.jpg"
-                width="270"
-                height="260"
-                alt="Команда 2"
-              />
+              <picture>
+                <source
+                  srcset="
+                ./img/team/team2.jpg x1,
+                ./img/team/team2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                ./img/team/team2-tablet.jpg x1,
+                ./img/team/team2-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                ./img/team/team2-mobile.jpg x1,
+                ./img/team/team2-mobile-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="imageteam"
+                  src="./img/team/team2-mobile.jpg"
+                  width="450"
+                  alt="Команда"
+                />
+              </picture>
               <h3 class="ourteam">Николай Тарасов</h3>
               <p lang="en" class="textteam">Marketing</p>
               <ul class="master-soc-list list">
@@ -307,13 +365,32 @@
               </ul>
             </li>
             <li class="list-team">
-              <img
-                class="imageteam"
-                src="./img/team/team3.jpg"
-                width="270"
-                height="260"
-                alt="Команда 3"
-              />
+              <picture>
+                <source
+                  srcset="
+                ./img/team/team3.jpg x1,
+                ./img/team/team3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                ./img/team/team3-tablet.jpg x1,
+                ./img/team/team3-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                ./img/team/team3-mobile.jpg x1,
+                ./img/team/team3-mobile-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="imageteam"
+                  src="./img/team/team3-mobile.jpg"
+                  width="450"
+                  alt="Команда"
+                />
+              </picture>
               <h3 class="ourteam">Михаил Ермаков</h3>
               <p lang="en" class="textteam">UI Designer</p>
               <ul class="master-soc-list list">
@@ -406,7 +483,7 @@
 
     <!-- Подвал -->
 
-    <footer class="footer-color">
+    <!-- <footer class="footer-color">
       <div class="container footer">
         <div class="footer-left">
           <a class="logo-footer" lang="en" href="./index.html"
@@ -488,11 +565,11 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Модальное окно -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-svg" width="11" height="11">
@@ -583,7 +660,7 @@
           <button type="submit" class="modal-btn">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>

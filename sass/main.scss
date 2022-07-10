@@ -1,3 +1,8 @@
+@import "./utils/hidden";
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixin";
+
 @import "./components/general";
 
 @import "./components/header";
@@ -11,6 +16,3 @@
 
 @import "./components/portfolio-nav";
 @import "./components/portfolio-content";
-
-@import "./utils/hidden";
-@import "./utils/variables";

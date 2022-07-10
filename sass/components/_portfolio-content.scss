@@ -1,3 +1,15 @@
+.section-gallery {
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+}
+
 .potfolioh3 {
   font-weight: 700;
   font-size: 18px;
@@ -26,7 +38,7 @@
 }
 
 .site-nav.list-images.flex-start-aligned {
-  max-width: 370px;
+  width: 370px;
   height: 404px;
 }
 
@@ -51,6 +63,18 @@
 .portfolio-top-wrap {
   position: relative;
   overflow: hidden;
+}
+
+.list-portfolio-img {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .list-portfolio-img:hover .portfolio-top-text,
