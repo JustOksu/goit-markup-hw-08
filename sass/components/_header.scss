@@ -39,6 +39,10 @@
   @extend %align-list;
 }
 
+.contacto {
+  display: none;
+}
+
 .contacto .link.current {
   color: var(--accent-text-color);
 }
@@ -62,7 +66,7 @@
 }
 
 .headder-contact {
-  display: flex;
+  display: none;
   list-style: none;
   margin-left: auto;
   justify-content: center;
@@ -132,4 +136,113 @@
 
 .headder-contact-list:nth-last-child(2) {
   margin-right: 30px;
+}
+
+// Mobile menu
+
+.menu-open-btn,
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-close-btn {
+  margin-bottom: 8px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 21px;
+  padding-bottom: 48px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+.mobile-menu-contacto {
+  list-style: none;
+}
+
+.mobile-menu-contacto .mobile-menu-item.current {
+  color: #2196f3;
+}
+
+.mobile-menu-link:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.curent .mobile-menu-item {
+  color: var(--accent-text-color);
+}
+
+.mob-connect-headder-contact {
+  list-style: none;
+}
+
+.mob-connect-headder-contact-list:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-connect-email {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-connect-tel {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-soc-list {
+  list-style: none;
+  margin-top: 64px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mob-soc-link:not(:first-child):before {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-right: 10px;
+}
+
+.mob-soc-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
 }

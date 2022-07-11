@@ -124,6 +124,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  @include mobile {
+    justify-content: center;
+  }
 }
 
 .masters-soc-item-footer {
@@ -133,7 +136,21 @@
 }
 
 .footer-left {
-  margin-right: 70px;
+  @include mobile {
+    min-width: 450px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    margin-right: 70px;
+  }
+}
+
+.footer-right {
+  @include mobile {
+    justify-content: center;
+  }
 }
 
 .footer-join {
@@ -145,15 +162,33 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  @include mobile {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .container.footer {
   display: flex;
   align-items: baseline;
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.footer-form-join {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-mail {
   margin-left: auto;
+  @include mobile {
+    justify-content: center;
+  }
 }
 
 .footer-mail-input {
@@ -165,6 +200,21 @@
   border-radius: 4px;
   padding-left: 16px;
   color: #ffffff;
+  @include mobile {
+    margin-bottom: 30px;
+    min-width: 450px;
+    width: 100%;
+  }
+  @include desktop {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    color: #ffffff;
+  }
 }
 
 .footer-btn-join {
@@ -183,6 +233,8 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  @include mobile {
+  }
 }
 
 .icon-send {

@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   transition: opacity 250ms, visibility 250ms;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -24,6 +25,9 @@
   padding: 40px;
   border-radius: 4px;
   transition: transform 250ms;
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .modal-close-btn {
@@ -138,6 +142,12 @@
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
+  @include mobile {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+  }
 }
 
 .check-text::before {
