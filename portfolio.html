@@ -22,7 +22,7 @@
   <body class="page">
     <!-- Шапка -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container hat">
         <nav class="nav-index">
           <a class="logo" lang="en" href="./index.html">
@@ -56,8 +56,114 @@
             >
           </li>
         </ul>
+
+        <!-- Mobile menu -->
+
+        <button type="button" class="menu-open-btn">
+          <svg class="" width="40" height="40">
+            <use
+              class="icon-menu"
+              href="./img/icon/mobile-menu.svg#icon-menu_mobile"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-- Hidden mobile menu -->
+
+      <div class="mobile-menu">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn">
+              <svg class="" width="40" height="40">
+                <use
+                  class="icon-menu"
+                  href="./img/icon/mobile-menu.svg#icon-menu_close_mobile"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu-contacto">
+              <li class="mobile-menu-link">
+                <a href="./index.html" class="mobile-menu-item">Студия</a>
+              </li>
+              <li class="mobile-menu-link">
+                <a href="./portfolio.html" class="mobile-menu-item current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu-link">
+                <a href="" class="mobile-menu-item">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mob-menu-bottom">
+            <div class="mob-connect">
+              <ul class="mob-connect-headder-contact">
+                <li class="mob-connect-headder-contact-list">
+                  <a class="mob-connect-tel" href="tel:+380961111111">
+                    <!-- <svg class="contacts-icon" width="10" height="16">
+                <use href="./img/icon/icons.svg#icon-tel"></use>
+              </svg> -->
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mob-connect-headder-contact-list">
+                  <a class="mob-connect-email" href="mailto:info@devstudio.com">
+                    <!-- <svg class="contacts-icon" width="16" height="12">
+                <use href="./img/icon/icons.svg#icon-mail"></use>
+              </svg> -->
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="mob-soc">
+              <ul class="mob-soc-list">
+                <li class="mob-soc-link">
+                  <a
+                    href=""
+                    class="mob-soc-item"
+                    target="_blank"
+                    rel="noopener nofollow norefferer"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob-soc-link">
+                  <a
+                    href=""
+                    class="mob-soc-item"
+                    target="_blank"
+                    rel="noopener nofollow norefferer"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob-soc-link">
+                  <a
+                    href=""
+                    class="mob-soc-item"
+                    target="_blank"
+                    rel="noopener nofollow norefferer"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob-soc-link">
+                  <a
+                    href=""
+                    class="mob-soc-item"
+                    target="_blank"
+                    rel="noopener nofollow norefferer"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Навигация -->
     <main>
@@ -465,7 +571,8 @@
     </main>
 
     <!-- Подвал -->
-    <!-- <footer class="footer-color">
+
+    <footer class="footer-color">
       <div class="container footer">
         <div class="footer-left">
           <a class="logo-footer" lang="en" href="./index.html"
@@ -529,7 +636,7 @@
         </div>
 
         <div class="footer-mail">
-          <form>
+          <form class="footer-form-join">
             <p class="footer-join">Подпишитесь на рассылку</p>
             <input
               type="email"
@@ -547,7 +654,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 

@@ -40,7 +40,13 @@
 }
 
 .contacto {
-  display: none;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .contacto .link.current {
@@ -66,11 +72,22 @@
 }
 
 .headder-contact {
-  display: none;
-  list-style: none;
-  margin-left: auto;
-  justify-content: center;
-  align-items: center;
+  @include mobile {
+    display: none;
+    list-style: none;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  @include tablet {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .text {
@@ -91,6 +108,7 @@
 }
 
 .link {
+  display: flex;
   position: relative;
   margin-right: 50px;
   font-weight: 500;
@@ -122,6 +140,12 @@
   letter-spacing: 0.02em;
   color: #757575;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include tablet {
+    margin-bottom: 10px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .contacts:hover .contacts-icon,
@@ -147,6 +171,12 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 .menu-close-btn {
@@ -154,19 +184,27 @@
 }
 
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 21px;
-  padding-bottom: 48px;
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  @include mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 21px;
+    padding-bottom: 48px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
   }
 }
 
