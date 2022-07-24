@@ -184,21 +184,20 @@
 }
 
 .mobile-menu {
-  @include mobile {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 21px;
-    padding-bottom: 48px;
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-    }
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 21px;
+  padding-bottom: 48px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
   @include tablet {
     display: none;

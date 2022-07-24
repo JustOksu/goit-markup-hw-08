@@ -70,6 +70,7 @@
   background-color: var(--head-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 .info-footer {
@@ -129,8 +130,6 @@
     margin-right: auto;
     margin-bottom: 20px;
   }
-  @include mobile {
-  }
 }
 
 .masters-soc-item-footer {
@@ -180,7 +179,8 @@
   @include tablet {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    // flex-direction: column;
+    align-items: baseline;
   }
   @include desktop {
     display: flex;
@@ -210,7 +210,6 @@
   @include mobile {
     display: flex;
     justify-content: center;
-    flex-direction: column;
   }
   @include tablet {
   }
@@ -222,7 +221,6 @@
 .footer-mail-input {
   @include mobile {
     margin-bottom: 30px;
-    min-width: 450px;
     width: 100%;
     height: 50px;
     background-color: transparent;
@@ -233,7 +231,7 @@
     color: #ffffff;
   }
   @include tablet {
-    max-width: 450px;
+    width: 450px;
   }
   @include desktop {
     width: 358px;

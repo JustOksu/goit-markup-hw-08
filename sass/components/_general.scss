@@ -54,7 +54,7 @@ button {
   padding-right: 15px;
   /* outline: solid red; */
   @include mobile {
-    width: 480px;
+    width: 320px;
   }
   @include tablet {
     width: 786px;
